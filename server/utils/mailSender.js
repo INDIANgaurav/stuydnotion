@@ -12,7 +12,7 @@ const mailSender = async (email, title, body) => {
                 pass: process.env.MAIL_PASS,
             },
             secure: false,
-      },
+   
     })
 
     let info = await transporter.sendMail({
